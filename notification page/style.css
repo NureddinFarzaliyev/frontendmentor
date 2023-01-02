@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'font', Arial, Helvetica, sans-serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+  }
+
+/* ===== End of Scrollbar CSS  */
+
+body{
+    padding-bottom: 10rem;
+}
+
+@font-face {
+    font-family: font;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    height: 5rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo b{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: hsl(219, 12%, 42%);
+    height: 2rem;
+}
+
+.number{
+    height: 1.5rem;
+    width: 1.8rem;
+    text-align: center;
+    color: #fff;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 5px;
+    margin: .5rem;
+    margin-top: .8rem;
+}
+
+.notification{
+    min-height: 5.5rem;
+    width: auto;
+    margin: 0 .9rem .9rem;
+    border-radius: 8px;
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;;
+    align-items: top;
+}
+
+.notif-new{
+    background-color: hsl(204, 26%, 93%);
+}
+
+.profile-img{
+    height: 3rem;
+    width: 3rem;
+    margin: .5rem;
+}
+
+.notif-red{
+    height: 10px;
+    width: 10px;
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: .2rem;
+}
+
+.notif-right{
+    margin: .5rem;
+    color: hsl(219, 12%, 42%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+b{
+    color: hsl(219, 19%, 17%);
+}
+
+.notif-time{
+    margin-top: .5rem;
+}
+
+.dark-blue{
+    color: hsl(219, 97%, 24%);
+}
+
+.message{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: solid rgba(128, 128, 128, 0.363) .5px;
+}
+
+.chess-img{
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+}
+
+
+/* Responsive for desktop */
+
+@media only screen and (min-width: 600px) {
+    body{
+        overflow: hidden;
+    }
+    
+    section{
+        border-radius: 15px 15px 15px 15px;
+        height: 80vh;
+        width: 80vw;
+        margin: 10vh 10vw;
+        overflow-y: scroll;
+        background-color: #fff;
+        box-shadow: 0px 0px 100px 50px rgba(94, 94, 95, 0.4);
+    }
+
+    nav{
+        position: fixed;
+        background-color: #fff;
+        width: 79vw;
+        border-radius: 15px 15px 0 0 ;
+    }
+
+    .notifications{
+        margin-top: 5rem;
+    }
+  }

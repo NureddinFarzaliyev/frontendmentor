@@ -1,0 +1,243 @@
+
+:root{
+    --text1-color: hsl(279, 6%, 55%);
+    --text2-color: hsl(270, 3%, 87%);
+    --white: hsl(0, 0%, 100%);
+    --button: hsl(278, 68%, 11%);
+    --error-color: hsl(0, 100%, 66%);
+    --active-form: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --text1: 16px;
+    --font: 'Space Grotesk', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--text1);
+    font-family: var(--font);
+    background-color: var(--text2-color);
+}
+
+.card{
+    height: 15rem;
+    background-image: url(images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5rem;
+}
+
+.card img{
+    height: 9rem;
+    position: absolute;
+}
+
+.card-back{
+    left: 10rem;
+    top: 4rem;
+}
+
+.card-front{
+    top: 9rem;
+    left: 1.5rem;
+}
+
+.big{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.small{
+    height: 10px;
+    width: 10px;
+    border: solid 1.5px var(--white);
+    border-radius: 50%;
+    margin-left: .8rem;
+}
+
+.card-text{
+    position: absolute;
+    color: var(--white);
+    height: 9rem;
+    width: 16.5rem;
+    top: 9rem;
+    left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-bottom{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    height: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 6rem;
+    justify-content: center;
+}
+
+.card-number{
+    padding: 0 1.2rem;
+}
+
+.form{
+    padding: 0 2rem;
+}
+
+label{
+    display: block;
+    font-size: 14px;
+    color: hsl(280, 73%, 20%);
+    margin-bottom: .5rem;
+}
+
+input{
+    justify-content: center;
+    height: 1.2rem;
+    width: 95%;
+    border: solid 1px var(--text1-color);
+    padding: .5rem;
+    height: 2rem;
+    font-size: 18px;
+    background-color: var(--text2-color);
+    margin-bottom: 1rem;
+    font-family: var(--font);
+    border-radius: 10px;
+}
+
+input:focus{
+    border-color: linear-gradient(#6448fe, #600594);
+}
+
+.f-i-last{
+    display: flex;
+}
+
+.f-i-left input, .f-i-right input{
+    width: 3.5rem;
+}
+
+.f-i-right{
+    margin-left: .5rem;
+}
+
+.f-i-right input{
+    width: 7rem;
+}
+
+
+button{
+    height: 3.5rem;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 1rem;
+    color: var(--text2-color);
+    background-color: var(--button);
+    font-family: var(--font);
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* ==== Thank You section ==== */
+
+.thanks{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks h1{
+    font-size: 2rem;
+
+}
+
+.thanks img{
+    margin-top: 3rem;
+    height: 5rem;
+}
+
+.thanks p{
+    margin-top: -.8rem;
+    font-size: var(--text2-color);
+}
+
+.thanks button{
+    width: 80%;
+    margin-top: 3rem;
+}
+
+
+
+
+
+/* ==== Responsive for desktop ==== */
+
+@media only screen and (min-width: 1100px) {
+
+    .card{
+        background-image: url(images/bg-main-desktop.png);
+        width: 35vw;
+        height: 100vh;
+        display: inline-block;
+    }
+
+    .card-img{
+        height: 20rem;
+        position: absolute;
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card img{
+        position: relative;
+        height: 13rem;
+    }
+
+    .card-text{
+        margin-left: 23rem;
+        margin-top: 1.3rem;
+        height: 13rem;
+        width: 22rem;
+        font-size: 20px;
+    }
+
+    .card-back{
+        top: inherit; left: inherit; right: inherit; left: inherit;
+        top: 15rem;
+        left: 15rem;
+    }
+    
+    .card-front{
+        top: inherit; left: inherit; right: inherit; left: inherit;
+    }
+
+    .form{
+        display: inline-block;
+        margin: inherit;
+        position: absolute;
+        top: 13rem;
+        left: 56rem;
+    }
+
+    .thanks{
+        display: none;
+        margin: inherit;
+        position: absolute;
+        top: 13rem;
+        left: 56rem;
+    }
+
+
+  }
